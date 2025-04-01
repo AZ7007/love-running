@@ -1,3 +1,8 @@
+/* google font import  */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* override default styles added by the browser   */
 
 * {
@@ -13,6 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+
+
 }
 
 header {
