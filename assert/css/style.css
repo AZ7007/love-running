@@ -41,8 +41,23 @@ header a {
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #252525;
+}
+
+#menu {
+  font-size:110% ;
+  list-style-type: none;
+  letter-spacing: 4px;
+
+}
+
+#menu li {
+margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
 }
 
 main {
@@ -50,6 +65,8 @@ main {
   /* make the main element take up surplus space to push the footer down*/
     flex: 1 0 auto;
 }
+
+
 
 footer {
   background-color: orange;
