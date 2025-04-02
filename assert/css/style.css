@@ -18,12 +18,12 @@ body {
   flex-direction: column;
   color: #3a3a3a;
 
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Header */
 header {
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 0 1rem;
   position: fixed;
   z-index: 99;
@@ -40,7 +40,7 @@ header a {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #252525;
@@ -52,7 +52,7 @@ h1 {
   letter-spacing: 4px;
 }
 
-#menu li {
+#menu > li {
   margin-bottom: 1em;
 }
 
@@ -75,7 +75,7 @@ nav {
 
 /* Nav toggle  */
 
-#nav-toggle:checked ~ nav {
+#nav-toggle:checked~nav {
   display: block;
 }
 
@@ -105,18 +105,20 @@ footer {
 
 /*media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px){
-/* header  */
+
+  /* header  */
 nav {
   display: block;
   position: relative;
   box-shadow: none;
-  width:fit-content;
+  width: fit-content;
   padding: 1rem;
 }
 
 #menu {
   display: flex;
 }
+
 #menu > li {
 
   padding-left: 1rem;
@@ -125,6 +127,20 @@ nav {
 
 .nav-toggle-label {
   display: none;
+
+}
+
+#logo {
+  font-size: 280%;
+  line-height: 75px;
+  margin: 0 0.5rem;
+}
+
+/* main content */
+
+main {
+  /* push main content down to accommodate the larger header */
+margin-top: 79px;
 
 }
 
