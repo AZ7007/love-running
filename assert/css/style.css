@@ -229,6 +229,16 @@ color: #ffffff;
   color:#3a3a3a;
 }
 
+/*media query: larger or landscape phones (575px and up */
+@media screen and (min-height: 576px ){
+
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+  
+}
+
 
 /*media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px){
@@ -301,16 +311,29 @@ right: 50px;
     align-self:flex-end;
 }
 
+/*Gallery */
+
+#photos {
+  column-count: 3;
+}
+
 }
 
 
-
+/*Larger devices (laptops desktops, 992px and up */
 @media screen and (min-width: 992px) {
   #menu a:hover{
 
     border-bottom: 1px solid #3a3a3a;
 
   }
+
+/*Gallery */
+
+#photos {
+  column-count: 4;
+}
+
 }
 
 @media screen and (min-width: 1200px){
