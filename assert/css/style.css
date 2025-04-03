@@ -229,6 +229,7 @@ color: #ffffff;
   color:#3a3a3a;
 }
 
+
 /*media query: larger or landscape phones (575px and up */
 @media screen and (min-height: 576px ){
 
@@ -241,7 +242,7 @@ color: #ffffff;
 
 
 /*media query: tablets and larger (768px and up */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
   /* header  */
 nav {
@@ -299,12 +300,14 @@ right: 50px;
 
 }
 
-#benefits-physical > div
+#benefits-physical > div {
+  width: 75%;
+}
+
 #benefits-mental > div {
   width: 75%;
-
-
 }
+
 
 #benefits-mental > div {
   text-align: end;
@@ -315,6 +318,33 @@ right: 50px;
 
 #photos {
   column-count: 3;
+}
+
+/*Form */
+
+#signup {
+  background-position: center ;
+  position: relative ;
+
+}
+
+#signup-form {
+  position: absolute ;
+  max-width: 400px;
+  left: 10%;
+  top: 150px;
+
+
+}
+
+.join-button:hover {
+  background-color: #fafafa;
+  color: #454b1b;
+
+}
+
+.text-input:hover {
+  border-color: #f16cbc;
 }
 
 }
@@ -334,7 +364,78 @@ right: 50px;
   column-count: 4;
 }
 
+
 }
+
+/*form */
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin-top: 46px;
+
+}
+
+#signup {
+  background-image: url(../images/signup-image.webp);
+  background-size: cover;
+  background-position: 75%;
+  flex-grow: 1;
+  padding: 20px 10% 0 10%;
+}
+
+#signup-form {
+  padding: 30px;
+  color:#ffffff;
+  background-color: rgba(60, 60, 60, 0.6);
+}
+
+
+
+#signup-form>h2 {
+  color:#fafafa;
+  margin-bottom: 20px;
+
+}
+
+
+
+.radio-buttons{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.join-button {
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  margin-top: 20px;
+  padding: 15px 32px;
+
+}
+
+
+
+.text-input {
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid #fafafa;
+  margin: 5px 0 20px 0;
+  height: 25px;
+  padding: 0 5px;
+  color:#fafafa;
+  width: 100%;
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px){
 
